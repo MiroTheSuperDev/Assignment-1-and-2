@@ -244,7 +244,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     final imageHeight = size.height * 0.64;
     final bottomSafe = media.padding.bottom;
 
-    final cardPadding = EdgeInsets.symmetric(horizontal: 26).copyWith(
+    final cardPadding = const EdgeInsets.symmetric(horizontal: 26).copyWith(
       top: 24,
       bottom: 14 + bottomSafe + _controlsHeight,
     );
@@ -531,7 +531,7 @@ class AuthService {
   static const Duration _simulatedLatency = Duration(milliseconds: 450);
 
   static final Map<String, _TestAccount> _accounts = <String, _TestAccount>{
-    'amir': _TestAccount(
+    'amir': const _TestAccount(
       id: 1,
       username: 'amir',
       password: '123',
@@ -541,7 +541,7 @@ class AuthService {
       gender: 'male',
       imageUrl: 'https://i.pravatar.cc/150?u=amir',
     ),
-    'test2': _TestAccount(
+    'test2': const _TestAccount(
       id: 2,
       username: 'test2',
       password: '456',
@@ -551,7 +551,7 @@ class AuthService {
       gender: 'unspecified',
       imageUrl: 'https://i.pravatar.cc/150?u=test2',
     ),
-    'miro': _TestAccount(
+    'miro': const _TestAccount(
       id: 3,
       username: 'miro',
       password: '789',
